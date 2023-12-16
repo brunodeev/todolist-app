@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'todo-list';
+  name: string = '';
+  lastName: string = '';
+  
+  updateName(name: string, lastName: string) {
+    alert(`Seu nome é ${name}, e seu sobrenome é ${lastName}`);
+  }
 }
