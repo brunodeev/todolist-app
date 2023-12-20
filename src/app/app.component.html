@@ -1,9 +1,7 @@
 <div class="container">
   <h2 *ngIf="inputName.value != ''">Olá, {{ name }}!</h2>
-  <br>
   <div class="form">
-    <input type="text" placeholder="Seu nome" [(ngModel)]="name" #inputName>
-    <input type="text" placeholder="Seu sobrenome" [(ngModel)]="lastName" #inputLastName>
-    <button (click)="updateName(inputName.value, inputLastName.value)">Enter</button>
+    <input type="text" placeholder="Nova Tarefa" [(ngModel)]="name" #inputName>
+    <button (click)="updateName(inputName.value)">Enter</button>
   </div>
 </div>

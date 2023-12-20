@@ -9,7 +9,7 @@ export class AppComponent {
   name: string = '';
   lastName: string = '';
   
-  updateName(name: string, lastName: string) {
-    alert(`Seu nome é ${name}, e seu sobrenome é ${lastName}`);
+  updateName(name: string) {
+    alert(`Seu nome é ${name}!`);
   }
 }

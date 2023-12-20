@@ -15,16 +15,14 @@
 .form {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     background-color: beige;
 }
 
 .form input {
-    width: 300px;
-    margin-bottom: 5px;
+    flex: 7;
     padding: 5px;
+    margin: 10px;
     border: 0px solid;
     border-radius: 3px;
     box-shadow: 5px 5px 6px #00000040;
@@ -35,9 +33,10 @@
 }
 
 .form button {
-    margin-top: 8px;
-    width: 308px;
+    flex: 1;
+    background-color: red;
     padding: 5px;
+    margin: 10px;
     border: 0px solid;
     border-radius: 3px;
     box-shadow: 5px 5px 6px #00000040;
@@ -45,5 +44,5 @@
 
 .form button:hover {
     cursor: pointer;
-    background-color: #cccccc ;
+    background-color: brown;
 }
