@@ -1,6 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
+
+.container {
+    margin-bottom: 3px;
     width: 100vw;
-    background-color: red;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: #1aa64b;
+}
+
+h1 {
+    margin: auto 0;
+    font-weight: bolder;
 }

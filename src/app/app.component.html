@@ -1,8 +1,7 @@
 <div class="container">
-  <h2 *ngIf="inputName.value != ''">Olá, {{ name }}!</h2>
   <div class="form">
-    <input type="text" placeholder="Nova Tarefa" [(ngModel)]="name" #inputName>
-    <button (click)="updateName(inputName.value)">Enter</button>
+    <input type="text" placeholder="Nova Tarefa" #inputName>
+    <button (click)="addTodo(inputName.value)">Enter</button>
   </div>
 
   <div class="list" *ngFor="let item of listItems">

@@ -6,12 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  name: string = '';
-  lastName: string = '';
+  todoTitle: string = '';
 
   listItems: string[] = ['Pao', 'Leite', 'Carro'];
   
-  updateName(name: string) {
-    alert(`Seu nome é ${name}!`);
+  addTodo(todoTitle: string) {
+    this.listItems.push(todoTitle);
   }
 }
