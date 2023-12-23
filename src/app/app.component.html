@@ -4,4 +4,8 @@
     <input type="text" placeholder="Nova Tarefa" [(ngModel)]="name" #inputName>
     <button (click)="updateName(inputName.value)">Enter</button>
   </div>
+
+  <div class="list" *ngFor="let item of listItems">
+    <todo-item itemName="{{ item }}"></todo-item>
+  </div>
 </div>

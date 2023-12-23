@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name: string = '';
   lastName: string = '';
+
+  listItems: string[] = ['Pao', 'Leite', 'Carro'];
   
   updateName(name: string) {
     alert(`Seu nome é ${name}!`);
