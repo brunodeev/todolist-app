@@ -1,13 +1,12 @@
 
 .container {
     margin-bottom: 3px;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     border-radius: 6px;
-    background-color: #1aa64b;
+    background-color: #1aa64bc7;
 }
 
-h1 {
-    margin: auto 0;
-    font-weight: bolder;
+h2 {
+    padding-left: 10px;
 }
