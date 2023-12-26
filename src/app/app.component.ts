@@ -11,6 +11,8 @@ export class AppComponent {
   listItems: string[] = ['Pao', 'Leite', 'Carro'];
   
   addTodo(todoTitle: string) {
-    this.listItems.push(todoTitle);
+    if(todoTitle != '' && todoTitle != undefined) {
+      this.listItems.push(todoTitle);
+    }
   }
 }
