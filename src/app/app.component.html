@@ -1,14 +1,14 @@
 <div class="container">
   <div class="form">
-    <input type="text" placeholder="Nova Tarefa" [(ngModel)]="valor" #inputName>
+    <input type="text" placeholder="Nova Tarefa" [(ngModel)]="valor" (keydown.enter)="addTodo(inputName.value)" #inputName>
     <button (click)="addTodo(inputName.value)">Adicionar</button>
   </div>
 
-  <div class="list" *ngFor="let item of listItems">
-    <todo-item  itemName="{{ item }}"></todo-item>
+  <div class="list" *ngFor="let item of todos">
+    <todo-item  itemName="{{ item.name }}" (click)="printar()"></todo-item>
   </div>
 
-  <div class="nullable" *ngIf="listItems.length == 0">
+  <div class="nullable" *ngIf="todos?.length == 0">
     <p>Lista de tarefas vazia!</p>
   </div>
 </div>

@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { TodoItemComponent } from './todo-item/todo-item.component';
+import { TodoService } from './service/todo.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,12 @@ import { TodoItemComponent } from './todo-item/todo-item.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    TodoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
