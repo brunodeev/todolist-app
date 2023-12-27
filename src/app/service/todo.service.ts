@@ -14,7 +14,15 @@ export class TodoService {
     return this.http.get<Todo[]>(this.API);
   }
 
+  update(body: any) {
+    return this.http.put<Todo[]>(this.API, `${body}`);
+  }
+
   create(todo: Todo) {
-    return this.http.post(this.API, todo);
+    return this.http.post<Todo>(this.API, todo);
+  }
+
+  delete(id: number) {
+    return this.http.delete<Todo>(`${this.API}/${id}`)
   }
 }

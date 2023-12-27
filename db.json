@@ -1,54 +1,14 @@
 {
   "todos": [
     {
-      "name": "tarefa1",
+      "name": "a",
       "done": false,
       "id": 1
     },
     {
-      "name": "a",
+      "name": "tetse",
       "done": false,
       "id": 2
-    },
-    {
-      "name": "sa",
-      "done": false,
-      "id": 3
-    },
-    {
-      "name": "sa",
-      "done": false,
-      "id": 4
-    },
-    {
-      "name": "asasa",
-      "done": false,
-      "id": 5
-    },
-    {
-      "name": "teste ",
-      "done": false,
-      "id": 6
-    },
-    {
-      "name": "ola",
-      "done": false,
-      "id": 7
-    },
-    {
-      "name": "asasa",
-      "done": false,
-      "id": 8
-    },
-    {
-      "name": "ola2",
-      "done": false,
-      "id": 9
-    },
-    {
-      "name": "dsjidasjdsa",
-      "done": false,
-      "id": 10
     }
   ]
 }

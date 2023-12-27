@@ -7,18 +7,22 @@ import { TodoService } from './service/todo.service';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent{
   
   todo?: Todo;
-  todoTitle = this.todo?.name;
   valor: string = '';
 
   @Input() todos?: Todo[];
 
-  constructor(private service: TodoService) {}
+  constructor(private service: TodoService) {
+  }
 
   ngOnInit() {
-    this.service.list().subscribe(dados => this.todos = dados);
+    this.getTasks();
+  }
+
+  getTasks(): void {
+    this.service.list().subscribe(tasks => this.todos = tasks);
   }
   
   addTodo(todoTitle: string) {
@@ -33,7 +37,7 @@ export class AppComponent {
     }
   }
 
-  printar() {
-    alert('Teste de alerta');
+  deletar(itemId?: number) {
+    this.service.delete(itemId!).subscribe(() => this.getTasks());
   }
 }
