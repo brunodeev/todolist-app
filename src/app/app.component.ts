@@ -6,13 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  
   todoTitle: string = '';
-
-  listItems: string[] = ['Pao', 'Leite', 'Carro'];
+  listItems: string[] = [];
+  valor: string = '';
   
   addTodo(todoTitle: string) {
     if(todoTitle != '' && todoTitle != undefined) {
       this.listItems.push(todoTitle);
+      this.valor = '';
     }
   }
 }
